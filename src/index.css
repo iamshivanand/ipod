@@ -14,7 +14,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.container{
+#container{
   margin-top: 40vh;
   margin-left: 40vw;
   height: 200px;
@@ -24,7 +24,8 @@ code {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px; 
 }
-.outer-wheel{
+#outer-wheel{
+
   margin: auto;
   height: 195px;
   width: 200px;
@@ -33,12 +34,71 @@ code {
   margin-top: 2px;
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
+ 
   
 }
-.inner-wheel{
-  margin: auto;
+#inner-wheel{
+  position: absolute;
+  margin-left: 50px;
+  margin-top: 47px;
   height: 100px;
   width: 100px;
   background-color: lightgray;
   border-radius: 50%;
+  z-index: 10;
+  
 }
+.menu{
+  position: absolute;
+  margin-left: 53px;
+  height: 40px;
+  width: 90px;
+  /* background-color: red; */
+  margin-top: 6px;
+  color: lightgray;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  font-size: 16px;
+}
+.forward{
+  position: absolute;
+  height: 90px;
+  width: 40px;
+  margin-left: 152px;
+  margin-top: 50px;
+  
+  /* background-color: blue; */
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+
+}
+.pause-play{
+  position: absolute;
+  margin-top: 151px;
+  margin-left: 53px;
+  height: 40px;
+  width: 90px;
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+.backward{
+  position: absolute;
+  height: 90px;
+  width: 40px;
+  margin-left: 6px;
+  margin-top: 50px;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+.icon-class{
+  color: lightgray;
+  margin-top: 38px;
+  
+  width: 100%;
+}
+.play-pause-icon{
+  color: lightgray;
+  margin-top: 12px;
+}
+
