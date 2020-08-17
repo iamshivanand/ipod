@@ -5,7 +5,9 @@ const Wheel= (props) => {
     return(
         <div id="container">
             <div id="outer-wheel">
-                <div className="menu"><span className="menu-icon">MENU</span></div>
+                <div id="menu">
+                    <span className="menu-icon">MENU</span>
+                </div>
                 <div id="inner-wheel"></div>
                 <div className="forward">
                     <FontAwesomeIcon icon ="forward" className="icon-class" />
